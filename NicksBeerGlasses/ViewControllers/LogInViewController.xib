@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LogInViewController" customModule="NicksBeerGlasses" customModuleProvider="target">
+            <connections>
+                <outlet property="favoritesButton" destination="AmW-Vy-PmM" id="Q8G-vq-Cu8"/>
+                <outlet property="infoButton" destination="sVq-gP-d0f" id="1JQ-nF-ssg"/>
+                <outlet property="listButton" destination="lg1-hC-dRB" id="j9C-P0-Rjf"/>
+                <outlet property="logInButton" destination="7Rp-tY-qR4" id="Q1u-mD-ABW"/>
+                <outlet property="loginButton" destination="EBi-v3-XJU" id="9bx-Ba-gPM"/>
+                <outlet property="passwordTextField" destination="KRX-u7-3NS" id="QYf-Ux-aee"/>
+                <outlet property="tabBar" destination="riH-hT-i0d" id="Yfr-Xz-mmq"/>
+                <outlet property="usernameTextField" destination="kYb-sl-4bS" id="7SN-Ju-hvn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tabBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="riH-hT-i0d">
+                    <rect key="frame" x="0.0" y="687" width="414" height="49"/>
+                    <color key="backgroundColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.20392156859999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="49" id="9Cf-WU-OTr"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="49" id="cBr-jK-Dur"/>
+                    </constraints>
+                    <items>
+                        <tabBarItem title="GLASSES" image="tabbar_list_icon.png" selectedImage="tabbar_list_icon.png" id="lg1-hC-dRB">
+                            <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tabBarItem>
+                        <tabBarItem title="MANAGER" image="tabbar_logIn_icon.png" selectedImage="tabbar_logIn_icon.png" springLoaded="YES" id="7Rp-tY-qR4">
+                            <color key="badgeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tabBarItem>
+                        <tabBarItem title="FAVORITES" image="tabbar_favorites_icon.png" selectedImage="tabbar_favorites_icon.png" id="AmW-Vy-PmM">
+                            <color key="badgeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tabBarItem>
+                        <tabBarItem title="INFO" image="tabbar_info_icon.png" selectedImage="tabbar_info_icon.png" id="sVq-gP-d0f">
+                            <color key="badgeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tabBarItem>
+                    </items>
+                    <color key="tintColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.20392156859999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <color key="barTintColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tabBar>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kYb-sl-4bS">
+                    <rect key="frame" x="59" y="278" width="319" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="L6m-8f-r8q"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KRX-u7-3NS">
+                    <rect key="frame" x="59" y="329" width="319" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="hra-tA-nLh"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="8ad-Ck-EJe">
+                    <rect key="frame" x="25" y="332" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="At1-Pg-FHU"/>
+                        <constraint firstAttribute="height" constant="30" id="IDh-WK-1vT"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="0GQ-tv-e0P">
+                    <rect key="frame" x="25" y="280" width="26" height="27"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="26" id="dD1-Fc-QEo"/>
+                        <constraint firstAttribute="height" constant="27" id="jWI-hl-fBC"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBi-v3-XJU">
+                    <rect key="frame" x="165" y="388" width="84" height="57"/>
+                    <color key="backgroundColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.20392156859999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="57" id="CJO-nM-KxM"/>
+                        <constraint firstAttribute="width" constant="84" id="dmn-zT-ckO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="LOG IN">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="logInTapped:" destination="-1" eventType="touchUpInside" id="mda-AL-uYI"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.15686274509803921" green="0.15686274509803921" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="EBi-v3-XJU" firstAttribute="top" secondItem="KRX-u7-3NS" secondAttribute="bottom" constant="29" id="0mt-vb-Q6G"/>
+                <constraint firstItem="0GQ-tv-e0P" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="260" id="1qf-gl-kbK"/>
+                <constraint firstItem="KRX-u7-3NS" firstAttribute="leading" secondItem="8ad-Ck-EJe" secondAttribute="trailing" constant="4" id="BtU-Kf-YFF"/>
+                <constraint firstItem="riH-hT-i0d" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="CZI-w2-yO3"/>
+                <constraint firstItem="riH-hT-i0d" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="E2g-zK-nnw"/>
+                <constraint firstItem="EBi-v3-XJU" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="KlE-jW-Kfq"/>
+                <constraint firstItem="KRX-u7-3NS" firstAttribute="top" secondItem="kYb-sl-4bS" secondAttribute="bottom" constant="21" id="LCH-f8-3hU"/>
+                <constraint firstItem="8ad-Ck-EJe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="M67-67-KDT"/>
+                <constraint firstItem="8ad-Ck-EJe" firstAttribute="top" secondItem="0GQ-tv-e0P" secondAttribute="bottom" constant="25" id="T9V-aj-tXM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KRX-u7-3NS" secondAttribute="trailing" constant="36" id="VHO-ao-KUf"/>
+                <constraint firstItem="0GQ-tv-e0P" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="VdV-9h-569"/>
+                <constraint firstItem="kYb-sl-4bS" firstAttribute="leading" secondItem="0GQ-tv-e0P" secondAttribute="trailing" constant="8" id="Wfj-jZ-4W8"/>
+                <constraint firstItem="riH-hT-i0d" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="XqU-Ni-bum"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kYb-sl-4bS" secondAttribute="trailing" constant="36" id="b0y-ho-gbq"/>
+                <constraint firstItem="riH-hT-i0d" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="eI3-Yw-nMc"/>
+                <constraint firstItem="riH-hT-i0d" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="i8N-iQ-jnw"/>
+                <constraint firstItem="kYb-sl-4bS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="258" id="kpI-gZ-FVc"/>
+                <constraint firstItem="riH-hT-i0d" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="sql-Bs-1r9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.25" y="153.75"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="email_icon.png" width="30" height="30"/>
+        <image name="lock_icon.png" width="30" height="30"/>
+        <image name="tabbar_favorites_icon.png" width="24" height="24"/>
+        <image name="tabbar_info_icon.png" width="24" height="24"/>
+        <image name="tabbar_list_icon.png" width="30" height="30"/>
+        <image name="tabbar_logIn_icon.png" width="24" height="24"/>
+    </resources>
+</document>

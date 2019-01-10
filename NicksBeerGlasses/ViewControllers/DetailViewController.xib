@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="NicksBeerGlasses" customModuleProvider="target">
+            <connections>
+                <outlet property="beerglassImageView" destination="7HY-VD-mOF" id="lKT-zi-EQ3"/>
+                <outlet property="beerslabel" destination="9be-iQ-PDP" id="RMs-lk-24x"/>
+                <outlet property="brandLabel" destination="eMJ-GT-3ap" id="8Ef-35-E1H"/>
+                <outlet property="darkener" destination="ud4-5h-Jwv" id="tRT-yu-Wou"/>
+                <outlet property="favoriteButton" destination="yN1-iU-ITq" id="kiX-zd-Mi6"/>
+                <outlet property="typeLabel" destination="yQs-8g-Rq6" id="Rod-Ix-PrV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7HY-VD-mOF">
+                    <rect key="frame" x="0.0" y="20" width="320" height="234"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="73b-a2-dWg"/>
+                        <constraint firstAttribute="height" constant="234" id="efQ-Ux-std"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ud4-5h-Jwv">
+                    <rect key="frame" x="0.0" y="20" width="320" height="234"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="IG0-Do-Qp7"/>
+                        <constraint firstAttribute="height" constant="234" id="R7m-uo-aka"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQs-8g-Rq6">
+                    <rect key="frame" x="16" y="310" width="288" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
+                    <color key="textColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Brand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMJ-GT-3ap">
+                    <rect key="frame" x="16" y="266" width="240" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="30"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Beers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9be-iQ-PDP">
+                    <rect key="frame" x="16" y="339" width="288" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yN1-iU-ITq">
+                    <rect key="frame" x="267" y="265" width="37" height="39"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="setFavorite:" destination="-1" eventType="touchDown" id="xTm-Bz-sbt"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ud4-5h-Jwv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="DuA-vP-4qw"/>
+                <constraint firstItem="ud4-5h-Jwv" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Epm-mh-Lha"/>
+                <constraint firstItem="ud4-5h-Jwv" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="F0k-Y0-62Q"/>
+                <constraint firstItem="ud4-5h-Jwv" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Pjp-ib-4kn"/>
+                <constraint firstItem="7HY-VD-mOF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="YRr-CR-wU3"/>
+                <constraint firstItem="7HY-VD-mOF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="nHF-ds-eqH"/>
+                <constraint firstItem="7HY-VD-mOF" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="psb-1n-JI6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.25" y="154.22535211267606"/>
+        </view>
+    </objects>
+</document>
